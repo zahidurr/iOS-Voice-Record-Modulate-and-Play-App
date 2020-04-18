@@ -14,7 +14,8 @@ An iPhone app that will allow users to record their voice and will then modulate
 
 ### Screenshots
 
-![Screenshot](screenshots/screenshot.png)
+![Screenshot](screenshots/1.png)
+![Screenshot](screenshots/2.png)
 
 ### License
 
