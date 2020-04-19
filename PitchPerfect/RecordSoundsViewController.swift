@@ -10,7 +10,6 @@ import UIKit
 import AVFoundation
 
 class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
-    
     var audioRecorder : AVAudioRecorder!
     
     // MARK: Outlet
@@ -35,7 +34,6 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     // MARK: Actions
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         configureUI(.notRecording)
     }
     
@@ -46,11 +44,8 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         let recordingName = "recordedVoice.wav"
         let pathArray = [dirPath, recordingName]
         let filePath = URL(string: pathArray.joined(separator: "/"))
-        
-
         let session = AVAudioSession.sharedInstance()
         
-
         do {
             try session.setCategory(AVAudioSession.Category.playAndRecord, mode: AVAudioSession.Mode.default, options: AVAudioSession.CategoryOptions.defaultToSpeaker)
         } catch {
@@ -73,9 +68,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     
     @IBAction func stopRecording(_ sender: AnyObject) {
         configureUI(.notRecording)
-
         audioRecorder.stop()
-        
         let audioSession = AVAudioSession.sharedInstance()
         try! audioSession.setActive(false)
     }
