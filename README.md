@@ -1,6 +1,6 @@
-# Voice Record, Modulate and Play
+# iOS Voice Record, Modulate and Play App
 
-An iPhone app that will allow users to record their voice and will then modulate the recorded audio to sound like different effects
+An iOS app that will allow users to record their voice and will then modulate the recorded audio to sound like different effects
 
 ### Features
 
