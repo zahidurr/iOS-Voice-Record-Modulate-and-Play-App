@@ -1,4 +1,4 @@
-# Pitch Perfect
+# Voice Record, Modulate and Play
 
 An iPhone app that will allow users to record their voice and will then modulate the recorded audio to sound like different effects
 
